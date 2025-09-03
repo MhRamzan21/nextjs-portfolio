@@ -3,9 +3,7 @@ import { Timeline } from '@/components/timeline'
 import { experienceData } from '@/data/experience'
 import React from 'react'
 
-type Props = {}
-
-const page = (props: Props) => {
+const page = () => {
   return (
     <div className="w-full xl:w-[70%] mx-auto">
       <Timeline

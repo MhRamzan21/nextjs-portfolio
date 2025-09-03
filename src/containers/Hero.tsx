@@ -17,7 +17,7 @@ export const Hero = () => {
       <div className="flex-1 relative w-full lg:w-auto">
         <div className="flex flex-col md:flex-row gap-4 items-center my-4 lg:my-0 lg:block">
           <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl  font-bold tracking-tight my-0 md:my-8 dark:text-zinc-300 text-zinc-700">
-            Hello! I'm<span className="lg:hidden">,</span>
+            Hello! I&apos;m<span className="lg:hidden">,</span>
           </h1>
 
           <Title />

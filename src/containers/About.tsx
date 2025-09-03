@@ -1,11 +1,8 @@
-import { BothLegsSeparator } from '@/components/ui/separator'
-import React from 'react'
-import { motion } from "framer-motion";
 import { KeyAchievements } from '@/components/key-achivements';
+import { BothLegsSeparator } from '@/components/ui/separator';
 
-type Props = {}
 
-const About = (props: Props) => {
+const About = () => {
   return (
     <div className='px-2'>
       <div className="mb-5 w-fit ">
@@ -17,11 +14,11 @@ const About = (props: Props) => {
 
       <div className="w-full  space-y-5 text-zinc-600 dark:text-zinc-400">
         <p>
-          I'm a Full Stack Developer with over three years of experience building fast, scalable, and user-friendly web applications. My core expertise lies in the MERN stack, along with frameworks like Next.js, NestJS, Node.js, and Express for building robust full-stack solutions.
+          I&apos;m a Full Stack Developer with over three years of experience building fast, scalable, and user-friendly web applications. My core expertise lies in the MERN stack, along with frameworks like Next.js, NestJS, Node.js, and Express for building robust full-stack solutions.
         </p>
 
         <p>
-          I’m equally comfortable on the frontend and backend — from crafting responsive UIs with Tailwind CSS, Shadcn/UI, Radix UI, and MUI, to building secure APIs, managing databases like MongoDB and PostgreSQL, and integrating services like Firebase and Cloudinary.
+          I&apos;m equally comfortable on the frontend and backend — from crafting responsive UIs with Tailwind CSS, Shadcn/UI, Radix UI, and MUI, to building secure APIs, managing databases like MongoDB and PostgreSQL, and integrating services like Firebase and Cloudinary.
         </p>
 
         <p>
@@ -29,7 +26,7 @@ const About = (props: Props) => {
         </p>
 
         <p>
-          Let’s turn ideas into great software.
+          Let&apos;s turn ideas into great software.
         </p>
       </div>
       <KeyAchievements />

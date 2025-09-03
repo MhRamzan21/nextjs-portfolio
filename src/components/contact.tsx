@@ -14,10 +14,10 @@ const Contact = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <h2 className="text-xl font-bold dark:text-zinc-300 text-zinc-700 mb-4">
-            Let's Discuss Your Project
+            Let&apos;s Discuss Your Project
           </h2>
           <p className="text-zinc-600 text-sm dark:text-zinc-400 mb-8">
-            I'd love to hear about your project and how I can help. Feel free to
+            I&apos;d love to hear about your project and how I can help. Feel free to
             reach out through any of the following contact methods or by using
             the form.
           </p>
