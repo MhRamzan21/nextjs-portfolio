@@ -66,6 +66,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${exo2.variable} antialiased scroll-smooth w-full max-w-dvw overflow-x-hidden`}
+        suppressHydrationWarning
       >
         <ThemeProvider
           attribute="class"

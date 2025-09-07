@@ -18,7 +18,7 @@ import {
 
 const links = [
   {
-    title: "All",
+    title: "Overview",
     href: "/",
   },
   {

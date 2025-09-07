@@ -1,5 +1,6 @@
 "use client";
 
+import { TitleWithSubtitle } from "@/components/title-subtitle";
 import { Button } from "@/components/ui/button";
 import { BothLegsSeparator } from "@/components/ui/separator";
 import { skillsData } from "@/data/skills";
@@ -14,24 +15,23 @@ export function Skills() {
       transition={{ duration: 1.2 }}
       className="w-full flex flex-col px-4 py-20"
     >
-      <div className="mb-5 w-fit">
-        <h2 className="text-2xl font-semibold mb-2 text-zinc-600 dark:text-zinc-400">
-          Technical Skills
-        </h2>
-        <BothLegsSeparator className="" />
-      </div>
-      <p className="w-full md:w-3/4 text-zinc-600 dark:text-zinc-400">
+      <TitleWithSubtitle title="My Skills" subtitle="What I know" />
+      {/* <p className="w-full md:w-3/4 text-zinc-600 dark:text-zinc-400">
         From pixel-perfect designs to scalable architectures, my development
         style is a crafted blend of artistry and engineering. These are the
         techniques I wield.
-      </p>
+      </p> */}
 
-      <div className="w-full my-10">
+      <div className="w-full ">
         {skillsData.map((category, categoryIdx) => (
           <div key={categoryIdx} className="mb-8">
-            <h3 className="text-xl font-medium mb-4 text-zinc-700 dark:text-zinc-300">
+            <div className="w-fit mb-4">
+            <h3 className="text-xl font-medium mb-2 text-zinc-700 dark:text-zinc-300">
               {category.category}
             </h3>
+            <BothLegsSeparator />
+
+            </div>
             <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6">
               {category.skills.map((skill, idx) => {
                 const Icon = skill.icon;

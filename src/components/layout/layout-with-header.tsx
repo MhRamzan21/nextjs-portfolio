@@ -1,13 +1,11 @@
-import React from "react"
-// import { Header } from "./header"
-// import { HeroBackground } from "./hero-background"
-import { Header } from "./header"
-import { HeroBackground } from "./hero-background"
+import React from "react";
+import { Header } from "./header";
+import { HeroBackground } from "./hero-background";
 
 export const LayoutWithHeader = ({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) => {
   return (
     <div className="font-[family-name:var(--font-exo2)] font-medium w-screen">
@@ -22,5 +20,5 @@ export const LayoutWithHeader = ({
         </footer>
       </HeroBackground>
     </div>
-  )
-}
+  );
+};

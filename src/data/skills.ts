@@ -26,6 +26,7 @@ import {
 
 import { BsFiletypeScss } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { FaMagic } from 'react-icons/fa';
 
 export const skillsData = [
   {
@@ -41,6 +42,7 @@ export const skillsData = [
       { name: 'CSS', icon: IconBrandCss3, hoverColor: '#264DE4' },
       { name: 'HTML', icon: IconBrandHtml5, hoverColor: '#E34F26' },
       { name: 'Framer Motion', icon: IconBrandFramerMotion, hoverColor: '#0055FF' },
+      { name: 'Magic UI', icon: FaMagic, hoverColor: '#F7DF1E' }
     ],
   },
   {

@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { memo, useEffect, useRef } from "react"
-import { cn } from "@/lib/utils"
+import { memo, useEffect, useRef } from "react";
+import { cn } from "@/lib/utils";
 
 interface GlowingEffectProps {
-  blur?: number
-  spread?: number
-  variant?: "default" | "white"
-  glow?: boolean
-  className?: string
-  disabled?: boolean
-  movementDuration?: number
-  borderWidth?: number
+  blur?: number;
+  spread?: number;
+  variant?: "default" | "white";
+  glow?: boolean;
+  className?: string;
+  disabled?: boolean;
+  movementDuration?: number;
+  borderWidth?: number;
 }
 
 const GlowingEffect = memo(
@@ -24,35 +24,38 @@ const GlowingEffect = memo(
     borderWidth = 1,
     disabled = false,
   }: GlowingEffectProps) => {
-    const containerRef = useRef<HTMLDivElement>(null)
-    const angleRef = useRef(0)
-    const animationFrameRef = useRef<number | null>(null)
+    const containerRef = useRef<HTMLDivElement>(null);
+    const angleRef = useRef(0);
+    const animationFrameRef = useRef<number | null>(null);
 
     useEffect(() => {
-      if (disabled) return
+      if (disabled) return;
 
       const animateAngle = () => {
-        angleRef.current += 1.5 
+        angleRef.current += 1.5;
         if (angleRef.current >= 360) {
-          angleRef.current = 0
+          angleRef.current = 0;
         }
 
         if (containerRef.current) {
-          containerRef.current.style.setProperty("--start", `${angleRef.current}`)
-          containerRef.current.style.setProperty("--active", "1")
+          containerRef.current.style.setProperty(
+            "--start",
+            `${angleRef.current}`
+          );
+          containerRef.current.style.setProperty("--active", "1");
         }
 
-        animationFrameRef.current = requestAnimationFrame(animateAngle)
-      }
+        animationFrameRef.current = requestAnimationFrame(animateAngle);
+      };
 
-      animateAngle()
+      animateAngle();
 
       return () => {
         if (animationFrameRef.current) {
-          cancelAnimationFrame(animationFrameRef.current)
+          cancelAnimationFrame(animationFrameRef.current);
         }
-      }
-    }, [disabled])
+      };
+    }, [disabled]);
 
     return (
       <>
@@ -118,10 +121,10 @@ const GlowingEffect = memo(
           />
         </div>
       </>
-    )
+    );
   }
-)
+);
 
-GlowingEffect.displayName = "GlowingEffect"
+GlowingEffect.displayName = "GlowingEffect";
 
-export { GlowingEffect }
+export { GlowingEffect };

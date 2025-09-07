@@ -1,3 +1,4 @@
+import { Contact } from "@/components/contact";
 import { FullScreen } from "@/components/full-screen";
 import About from "@/containers/About";
 import { Hero } from "@/containers/Hero";
@@ -17,7 +18,9 @@ export default function Home() {
         <Skills />
       </div>
 
-      <div className="my-10"></div>
+      <div className="">
+        <Contact />
+      </div>
     </div>
   );
 }

@@ -14,3 +14,13 @@ export interface TimelineProps {
   items: TimelineItem[];
   className?: string;
 }
+
+export type ProjectCardProps = {
+  title: string;
+  description: string;
+  image: string;
+  stack: string[];
+  link?: string;
+  images?: string[];
+  slug?: string;
+};

@@ -3,10 +3,10 @@ import { TimelineItem } from "@/types/types";
 export const experienceData: TimelineItem[] = [
   {
     title: "Full Stack Developer",
-    company: "Self Employeed",
+    company: "Veestar Infotech Solutions LLP",
     startDate: "December 2024",
     endDate: "Present",
-    location: "Lahore, Pakistan",
+    location: "Remote",
     description:
       "Building scalable web applications and delivering end-to-end solutions for global clients. Designing robust APIs, integrating cloud services, and implementing responsive, pixel-perfect UIs using TypeScript, Next.js, and Tailwind CSS.",
   },
@@ -25,7 +25,7 @@ export const experienceData: TimelineItem[] = [
     company: "Freelance Projects",
     startDate: "2023",
     endDate: "Present",
-    location: "Remote",
+    location: "Freelance",
     description:
       "Delivered diverse client projects from concept to deployment — building custom dashboards, e-commerce stores, and SaaS applications. Specialized in TypeScript, Next.js, and Tailwind CSS, ensuring high code quality, responsive design, and seamless user experience.",
   },
