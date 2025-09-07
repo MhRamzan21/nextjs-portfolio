@@ -9,9 +9,9 @@ import { BothLegsSeparator } from "@/components/ui/separator";
 export default async function ProjectDetail({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await Promise.resolve(params);
+  const { slug } = await params;
   const project = projectsData.find((p) => p.slug === slug);
 
   const cards = project?.images?.map((img: string, idx: number) => (

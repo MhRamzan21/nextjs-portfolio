@@ -1,8 +1,7 @@
 "use client";
 
-import { Calendar, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-import { BothLegsSeparator } from "./ui/separator";
+import { Calendar, MapPin } from "lucide-react";
 import { TitleWithSubtitle } from "./title-subtitle";
 
 export interface TimelineItem {
@@ -30,12 +29,6 @@ export function Timeline({ title, items, className = "" }: TimelineProps) {
       transition={{ duration: 1.2 }}
       className={`w-full flex flex-col px-4 py-20 ${className}`}
     >
-      {/* <div className="mb-12 w-fit">
-        <h2 className="text-2xl font-bold text-zinc-600 dark:text-zinc-400 mb-2">
-          {title}
-        </h2>
-          <BothLegsSeparator />
-      </div> */}
       <TitleWithSubtitle title={title} subtitle="My Journey" />
 
       <div className="">
