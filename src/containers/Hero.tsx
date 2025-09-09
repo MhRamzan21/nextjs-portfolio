@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { BothLegsSeparator } from "@/components/ui/separator";
@@ -74,7 +73,7 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <IconBrandGmail />
+              <IconBrandGmail />
             </a>
           </Button>
         </div>
