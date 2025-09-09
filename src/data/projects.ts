@@ -145,6 +145,45 @@ const projectsData = [
       "Ensured cross-browser compatibility and responsiveness across devices.",
     ],
   },
+  {
+  title: "Doctor Appointment System",
+  description:
+    "A role-based healthcare appointment booking system with dedicated dashboards for patients, doctors, and administrators. Patients can schedule appointments, doctors can manage their availability, and admins can oversee users, appointments, and reports for smooth operations.",
+  image: "/projects/appoint1.png",
+  images: [
+    "/projects/appoint1.png",
+    "/projects/appoint2.png",
+    "/projects/appoint3.png",
+    "/projects/appoint4.png",
+    "/projects/appoint5.png",
+  ],
+  stack: [
+    "React",
+    "JavaScript",
+    "TailwindCSS",
+    "Redux Toolkit",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT Authentication",
+    "REST APIs",
+  ],
+  slug: "doctor-appointment-system",
+  github: "https://github.com/MhRamzan21/MERN-Doctor-Appointment-App.git",
+  keyPoints: [
+    "Implemented role-based authentication and authorization for patient, doctor, and admin users using JWT.",
+    "Developed a patient dashboard with features for booking, rescheduling, and cancelling appointments.",
+    "Built a doctor dashboard to manage schedules, view patient details, and update availability.",
+    "Created an admin dashboard for managing doctors, patients, appointments, and generating reports.",
+    "Integrated a calendar system for doctors and patients to track availability and confirmed bookings.",
+    "Designed a modern, responsive UI with Material UI and TailwindCSS for an intuitive experience across devices.",
+    "Utilized Redux Toolkit for efficient global state management and smooth user interactions.",
+    "Implemented secure data handling, form validation, and error management for a reliable experience.",
+    "Optimized backend APIs in Node.js/Express with MongoDB queries for fast data retrieval.",
+    "Ensured cross-browser compatibility, accessibility, and responsive design.",
+  ],
+}
+
 ];
 
 export default projectsData;

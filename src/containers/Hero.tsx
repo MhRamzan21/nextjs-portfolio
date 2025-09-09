@@ -37,25 +37,45 @@ export const Hero = () => {
         </div>
         <div className="flex items-center gap-4">
           <Button
+            asChild
             variant="outline"
             size="icon"
             className="border size-10 cursor-pointer rounded-xl p-2 hover:border-[var(--brand)] hover:text-[var(--brand)] dark:hover:border-[var(--brand)] dark:hover:text-[var(--brand)] transition-colors duration-300 relative"
           >
-            <IconBrandGithub />
+            <a
+              href="https://github.com/MhRamzan21"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconBrandGithub />
+            </a>
+          </Button>
+
+          <Button
+            variant="outline"
+            size="icon"
+            className="border size-10 cursor-pointer rounded-xl p-2 hover:border-[var(--brand)] hover:text-[var(--brand)] dark:hover:border-[var(--brand)] dark:hover:text-[var(--brand)] transition-colors duration-300 relative"
+          >
+            <a
+              href="https://www.linkedin.com/in/mhramzan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconBrandLinkedin />
+            </a>
           </Button>
           <Button
             variant="outline"
             size="icon"
             className="border size-10 cursor-pointer rounded-xl p-2 hover:border-[var(--brand)] hover:text-[var(--brand)] dark:hover:border-[var(--brand)] dark:hover:text-[var(--brand)] transition-colors duration-300 relative"
           >
-            <IconBrandLinkedin />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            className="border size-10 cursor-pointer rounded-xl p-2 hover:border-[var(--brand)] hover:text-[var(--brand)] dark:hover:border-[var(--brand)] dark:hover:text-[var(--brand)] transition-colors duration-300 relative"
-          >
+            <a
+              href="mailto:mhmd.ramzan220@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <IconBrandGmail />
+            </a>
           </Button>
         </div>
       </div>

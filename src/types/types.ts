@@ -23,4 +23,5 @@ export type ProjectCardProps = {
   link?: string;
   images?: string[];
   slug?: string;
+  github?: string;
 };

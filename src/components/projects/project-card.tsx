@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { ProjectCardProps } from "@/types/types";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { BsGithub } from "react-icons/bs";
 
 export function ProjectCard({
   title,
@@ -14,6 +15,7 @@ export function ProjectCard({
   stack,
   link,
   slug,
+  github
 }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl hover:border-[var(--brand)] transition-all bg-card pt-0">
@@ -52,6 +54,13 @@ export function ProjectCard({
           {slug && (
             <Button size="sm" className="bg-[var(--brand)]">
               <Link href={`/projects/${slug}`}>View Details</Link>
+            </Button>
+          )}
+          {github && (
+            <Button variant="outline" size="sm">
+              <a href={github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <BsGithub size={16} /> Code
+              </a>
             </Button>
           )}
         </div>
