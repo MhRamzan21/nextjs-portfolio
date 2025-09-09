@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png", // Replace if you have your own image
+        url: "/images/profile-img.jpeg",
         width: 1200,
         height: 630,
         alt: "Muhammad Ramzan - Full Stack Developer Portfolio",
@@ -47,12 +47,9 @@ export const metadata: Metadata = {
     title: "Muhammad Ramzan | Full Stack Developer Portfolio",
     description:
       "Explore Muhammad Ramzan's full stack projects and expertise in React, Node.js, Next.js, and modern web development.",
-    images: [
-      "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
-    ],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/r-circle.svg",
   },
 };
 
